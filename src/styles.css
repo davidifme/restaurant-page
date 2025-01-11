@@ -1,0 +1,9 @@
+body {
+    background-color: #474747;
+    color: white;
+}
+
+#restaurant-image {
+    width: 750px;
+    border-radius: 12px;
+}
