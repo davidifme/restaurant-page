@@ -11,6 +11,7 @@ export default function contactPage() {
     const contactForm = document.createElement('form');
     contactForm.action = '#';
     contactForm.method = 'post';
+    contactForm.id = 'contact-form';
 
     const formNameLabel = document.createElement('label');
     formNameLabel.for = 'name';
@@ -36,6 +37,7 @@ export default function contactPage() {
     formMessageLabel.for = 'message'
     formMessageLabel.textContent = 'Message:'
     const formMessageInput = document.createElement('textarea');
+    formMessageInput.classList.add('contact-form-textarea');
     formMessageInput.id = 'message';
     formMessageInput.name = 'message';
     formMessageInput.rows = '5';

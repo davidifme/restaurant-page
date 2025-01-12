@@ -12,6 +12,7 @@ export default function homePage() {
     h1.textContent = 'Smak Sfery';
 
     const para = document.createElement('p');
+    para.classList.add('homepage-para');
     para.textContent = 'Nowoczesna restauracja łącząca różnorodne smaki z całego świata w wyjątkowej atmosferze. Oferujemy unikalne połączenia kuchni fusion, tworząc kulinarną podróż bez granic. Przyjdź, by odkryć, jak smakują miejsca, o których marzysz!';
 
     contentDiv.innerHTML = '';

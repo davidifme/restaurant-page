@@ -20,10 +20,10 @@ export default function menuPage() {
 
     function createDish(name, description, imageURL) {
         const dishesContainer = document.createElement('div');
-        dishesContainer.classList.add('menu-dishes-container');
+        dishesContainer.classList.add('menu-dish-container');
     
         const dishName = document.createElement('h2');
-        dishName.classList.add('menu-item-name');
+        dishName.classList.add('menu-dish-name');
         dishName.textContent = name;
     
         const dishDescription = document.createElement('p');
@@ -33,6 +33,7 @@ export default function menuPage() {
         const dishImage = document.createElement('img');
         dishImage.src = imageURL;
         dishImage.alt = `${name} image`;
+        dishImage.classList.add('menu-dish-image');
     
         dishesContainer.append(dishName, dishDescription, dishImage);
     
